@@ -19,6 +19,7 @@ public class ListCreator<T> {
     public static <T> ListCreator<T> collectFrom(List<T> lista){
 
         return new ListCreator<>(lista);
+//44
 
     }
 
@@ -50,3 +51,4 @@ public class ListCreator<T> {
         return lista3;
     }
 }
+
