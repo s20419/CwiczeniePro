@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang ="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>PsychMed DEMO</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+</head>  
+
+<body>
+    <header>
+        <h1>PsychMed</h1>
+        <img src="../../images/logo.png" alt="PsychMed Logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Strona główna</a></li>
+            <li><a href="../employee/list.html">Lekarze</a></li>
+            <li><a href="../specjalizacje/listaSpecjalizacji.html">Specjalizacje</a></li>
+            <li><a href="../zatrudnienie/listaZatrudnionych.html">Zatrudnienie</a></li>
+        </ul>
+        
+    </nav>
+
+
+    <main>
+        <h2>Nowe zatrudnienie</h2>
+        
+              <form>
+
+                
+                <label for="Lekarz"> Lekarz: *</label>
+                <select name="Lekarz" id ="Lekarz">
+                <option value="1" > Jan Kowalski</option>
+                <option value="2" > Anna Leosia</option>
+                </select>
+
+                <label for="Specjalizacja"> Specjalizacja: *</label>
+                <select name="Specjalizacja" id ="Specjalizacja"  >
+                <option value="1" > PscyhologDziecięcy</option>
+                </select>
+
+
+                <label for="Zarobek"> Zarobek: *</label>
+                <input type="number" min="2800" name="Zarobek" id="Zarobek"  required />
+                <span id="errorZarobek" class="errors-text"></span>
+                
+                <label for="PracaOd">PracaOd: *</label>
+                <input type="date" name="PracaOd" id="PracaOd"  required />
+                <span id="errorPracaOd" class="errors-text"></span>
+
+                <label for="PracaDo">PracaDo: *</label>
+                <input type="date" name="PracaDo" id="PracaDo"  required />
+                <span id="errorPracaDo" class="errors-text"></span>
+                
+               
+
+                  <div>
+                    <button formaction="../../successAdding.html" class="button-add">Dodaj</button>
+                    <a href="../zatrudnienie/listaZatrudnionych.html" class="list-actions-button-delete">Anuluj</a>
+                  </div>
+                  
+              </form> 
+            
+        
+        
+        
+    </main>
+
+    <footer>
+        PsychMed poradnia pscyhologiczna
+    </footer>
+
+
+
+</body>
+
+
+</html>

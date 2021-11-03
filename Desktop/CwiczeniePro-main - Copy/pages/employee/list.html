@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang ="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>PsychMed Demo</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+</head>  
+
+<body>
+    <header>
+        <h1>PsychMed</h1>
+        <img src="../../images/logo.png" alt="PsychMed Logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Strona główna</a></li>
+            <li><a href="../employee/list.html" class="active">Lekarze</a></li>
+            <li><a href="../specjalizacje/listaSpecjalizacji.html">Specjalizacje</a></li>
+            <li><a href="../zatrudnienie/listaZatrudnionych.html">Zatrudnienie</a></li>
+        </ul>
+
+        
+        
+    </nav>
+
+
+    <main>
+        <h2>Lista Lekarzy</h2>
+        <table class="table-list">
+            <thead>
+                <tr>
+                    <th>Imię </th>
+                    <th>Nazwisko</th>
+                    <th>Wiek</th>
+                    <th>E-mail</th>
+                    <th>NrTelefonu</th>
+                    <th>Akcje</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jan </td>
+                    <td>Kowalski</td>
+                    <td>45</td>
+                    <td>jan.kowalski@acme.com</td>
+                    <td>500-136-775</td>
+                    <td>
+                        <ul>
+                            <li>
+                                
+                                <a href="../employee/Szczegoly.html"   class="list-actions-button-details" >Szczegóły</a>
+                            </li>
+                            <li>
+                                <a href="../employee/form-edit.html"   class="list-actions-button-edit">Edytuj</a>
+                            </li>
+                            <li>
+                                <a href="../../FinalDecision.html"  class="list-actions-button-delete">Usuń</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p><a href="../employee/form.html" class="button-add" >Dodaj nowego lekarza</a></p>
+        
+        
+    </main>
+
+    <footer>
+        PsychMed poradnia pscyhologiczna
+    </footer>
+
+</body>
+
+
+</html>
+

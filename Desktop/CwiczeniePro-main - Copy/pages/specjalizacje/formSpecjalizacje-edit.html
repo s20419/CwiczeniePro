@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang ="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>PsychMed Demo</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+</head>  
+
+<body>
+    <header>
+        <h1>PsychMed</h1>
+        <img src="../../images/logo.png" alt="PsychMed Logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Strona główna</a></li>
+            <li><a href="../employee/list.html">Lekarze</a></li>
+            <li><a href="../specjalizacje/listaSpecjalizacji.html">Specjalizacja</a></li>
+            <li><a href="../zatrudnienie/listaZatrudnionych.html">Zatrudnienie</a></li>
+        </ul>
+
+    
+        
+    </nav>
+
+
+    <main>
+        <h2>Edycja Scpecjalizacji</h2>
+        
+              <form>
+                  <label for="NazwaSpecjalizacji">NazwaSpecjalizacji: *</label>
+                  <input type="text" pattern="[a-z A-Z]*" name="NazwaSpecjalizacji" id="NazwaSpecjalizacji" value="Psycholog-Dziecięcy" required />
+                  <span id="errorNazwaSpecjalizacji" class="errors-text"></span>
+                  
+                  <label for="BazowaPensja">BazowaPensja: *</label>
+                  <input type="number" min="2800" name="BazowaPensja" id="BazowaPensja" value="3500" required />
+                  <span id="errorBazowaPensja" class="errors-text"></span>
+                  
+                 
+
+                  <div>
+                    <button formaction="../../SuccessEditing.html" class="list-actions-button-edit">Edytuj</button>
+                    <a href="../specjalizacje/listaSpecjalizacji.html" class="list-actions-button-delete" >Anuluj</a>
+                  </div>
+                  
+              </form> 
+            
+        
+        
+        
+    </main>
+
+    <footer>
+        PsychMed poradnia pscyhologiczna
+    </footer>
+
+</body>
+
+
+</html>

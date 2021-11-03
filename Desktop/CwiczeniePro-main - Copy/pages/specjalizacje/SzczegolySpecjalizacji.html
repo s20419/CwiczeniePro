@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang ="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>PsychMed DEMO</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+</head>  
+
+<body>
+    <header>
+        <h1>PsychMed</h1>
+        <img src="../../images/logo.png" alt="PsychMed Logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Strona główna</a></li>
+            <li><a href="../employee/list.html">Lekarze</a></li>
+            <li><a href="../specjalizacje/listaSpecjalizacji.html">Specjalizacje</a></li>
+            <li><a href="../zatrudnienie/listaZatrudnionych.html">Zatrudnienie</a></li>
+        </ul>
+
+        
+    </nav>
+
+
+    <main>
+        <h2>Szczegóły specjalizacji</h2>
+
+        <form>
+            <label for="IdSpecjalizacji">IdSpecjalizacji: </label>
+            <input type="number" name="IdSpecjalizacji" id="IdSpecjalizacji" value="1" disabled />
+            <span id="errorIdSpecjalizacji" class="errors-text"></span>
+
+            <label for="Nazwa">Nazwa: </label>
+            <input type="text" name="Nazwa" id="Nazwa" value="PsychologDziecięcy" disabled />
+            <span id="errorNazwa" class="errors-text"></span>
+              
+              <label for="BazowaPensja">BazowaPensja: </label>
+              <input type="number" name="BazowaPensja" id="BazowaPensja" value="3500" disabled />
+              <span id="errorBazowaPensja" class="errors-text"></span>
+              
+
+              <div>
+            
+                <a href="../specjalizacje/formSpecjalizacje-edit.html">Edytuj</a>
+              </div>
+              
+          </form> 
+
+
+        <table class="table-list">
+            <thead>
+                <tr>
+                    <th>Lekarz</th>
+                    <th>Wiek</th>
+                    <th>Email</th>
+                    <th>NrTelefonu</th>
+                    <th>Opinia</th>
+                </tr>
+
+                
+                  
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jan Kowalski</td>
+                    <td>45</td>
+                    <td>jan.kowalski@acme.com</td>
+                    <td>500-136-775</td>
+                    <td>very good pracownik</td>
+
+                    
+
+                     
+                </tr>
+
+
+               
+             
+            </tbody>
+        </table>
+        
+        
+        
+    </main>
+
+    <footer>
+        PsychMed poradnia pscyhologiczna
+    </footer>
+
+</body>
+
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang ="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>PsychMed Demo</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+</head>  
+
+<body>
+    <header>
+        <h1>PsychMed</h1>
+        <img src="../../images/logo.png" alt="PsychMed Logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Strona główna</a></li>
+            <li><a href="../employee/list.html">Lekarze</a></li>
+            <li><a href="../specjalizacje/listaSpecjalizacji.html">Specjalizacja</a></li>
+            <li><a href="../zatrudnienie/listaZatrudnionych.html">Zatrudnienie</a></li>
+        </ul>
+
+        
+    </nav>
+
+
+    <main>
+        <h2>Edycja Zatrudnienia</h2>
+        
+              <form>
+
+
+                <label for="idZatrudnionego"> idZatrudnionego: *</label>
+                <input type="number"  name="idZatrudnionego" id="idZatrudnionego" value ="1" required />
+                <span id="erroridZatrudnionego" class="errors-text"></span>
+                
+                <label for="Imie">Imie: *</label> 
+                <input type="text" pattern="[a-z A-Z]*" name="Imie" id="Imie" value ="Jan" required />
+                <span id="errorImie" class="errors-text"></span>
+
+                <label for="Nazwisko"> Nazwisko: *</label>
+                <input type="text" pattern="[a-z A-Z]*" name="Nazwisko" id="Nazwisko" value ="Kowlaski" required />
+                <span id="errorNazwisko" class="errors-text"></span>
+                
+                <label for="Specjalizacja">Specjalizacja: *</label> 
+                <input type="text" pattern="[a-z A-Z]*" name="Specjalizacja" id="Specjalizacja" value="PsychologDziecięcy" required />
+                <span id="errorSpecjalizacja" class="errors-text"></span>
+
+                
+                <label for="Opinia">Opinia: *</label> 
+                <input type="text" name="Opinia" id="Opinia"  value="Very good pracownik" />
+                <span id="errorOpinia" class="errors-text"></span>
+
+
+                <label for="BazowaPensja">BazowaPensja: *</label> 
+                <input type="number" min="2800" name="BazowaPensja" id="BazowaPensja"   value="3500" required />
+                <span id="errorBazowaPensja" class="errors-text"></span>
+
+                <label for="Zarobek"> Zarobek: *</label>
+                <input type="number" min=2800 name="Zarobek" id="Zarobek"  value="4500" required />
+                <span id="errorZarobek" class="errors-text"></span>
+                
+                <label for="PracaOd">PracaOd: *</label> 
+                <input type="date" name="PracaOd" id="PracaOd"  value="2012-11-15" required />
+                <span id="errorPracaOd" class="errors-text"></span>
+
+                <label for="PracaDo"> PracaDo: *</label>
+                <input type="date" name="PracaDo" id="PracaDo"  value="" required />
+                <span id="errorPracaDo" class="errors-text"></span>
+
+
+
+                <div>
+                    <button formaction="../../SuccessEditing.html" class="list-actions-button-edit">Edytuj</button>
+                    <a href="../zatrudnienie/listaZatrudnionych.html" class="list-actions-button-delete">Anuluj</a>
+                  </div>
+                  
+              </form> 
+            
+        
+        
+        
+    </main>
+
+    <footer>
+        PsychMed poradnia pscyhologiczna
+    </footer>
+
+
+</body>
+
+
+</html>

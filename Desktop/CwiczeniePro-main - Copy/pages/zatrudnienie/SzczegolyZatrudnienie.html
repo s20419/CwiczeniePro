@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang ="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>PsychMed DEMO</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+</head>  
+
+<body>
+    <header>
+        <h1>PsychMed</h1>
+        <img src="../../images/logo.png" alt="PsychMed Logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Strona główna</a></li>
+            <li><a href="../employee/list.html">Lekarze</a></li>
+            <li><a href="../specjalizacje/listaSpecjalizacji.html">Specjalizacje</a></li>
+            <li><a href="../zatrudnienie/listaZatrudnionych.html">Zatrudnienie</a></li>
+        </ul>
+
+        
+    </nav>
+
+
+    <main>
+        <h2>Szczegóły zatrudnionego</h2>
+
+        <form>
+
+
+            <label for="Imie">Imie: *</label>
+            <input type="text" pattern="[a-z A-Z]*" name="Imie" id="Imie" value="Jan" disabled />
+            <span id="errorImie" class="errors-text"></span>
+
+            
+            <label for="Nazwisko">Nazwisko: *</label>
+            <input type="text" pattern="[a-z A-Z]*" name="Nazwisko" id="Nazwisko" value="Kowalski" disabled />
+            <span id="errorNazwisko" class="errors-text"></span>
+              
+              <label for="Specjalizacja">Specjalizacja: *</label>
+              <input type="text" pattern="[a-z A-Z]*" name="Specjalizacja" id="Specjalizacja" value="PsychologDziecięcy" disabled />
+              <span id="errorSpecjalizacja" class="errors-text"></span>
+
+              
+              
+
+              <div>
+            
+                <a href="../zatrudnienie/formZatrudnienie-edit.html">Edytuj</a>
+              </div>
+              
+          </form> 
+
+
+        <table class="table-list">
+            <thead>
+                <tr>
+                    <th>IdZatrudnionego</th>
+                    <th>Opinia</th>
+                    <th>BazowaPensja</th>
+                    <th>Zarobek</th>
+                    <th>PracaOd</th>
+                    <th>PracaDo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>very-good pracownik</td>
+                    <td>3500zł</td>
+                    <td>4500zł</td>
+                    <td>15.11.2012</td>
+                    <td>dziś</td>
+
+                     
+                </tr>
+            </tbody>
+        </table>
+        
+        
+        
+    </main>
+
+    <footer>
+        PsychMed poradnia pscyhologiczna
+    </footer>
+
+
+
+</body>
+
+
+</html>

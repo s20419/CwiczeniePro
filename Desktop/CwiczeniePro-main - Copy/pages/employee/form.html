@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang ="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>PsychMed DEMO</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+</head>  
+
+<body>
+    <header>
+        <h1>PsychMed</h1>
+        <img src="../../images/logo.png" alt="PsychMed Logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Strona główna</a></li>
+            <li><a href="../employee/list.html">Lekarze</a></li>
+            <li><a href="../specjalizacje/listaSpecjalizacji.html">Specjalizacje</a></li>
+            <li><a href="../zatrudnienie/listaZatrudnionych.html">Zatrudnienie</a></li>
+        </ul>
+
+    
+    </nav>
+
+
+    <main>
+        <h2>Nowy Lekarz</h2>
+       
+           
+              <form >
+                  <label for="firstName">Imię: *</label>
+                  <input type="text" pattern="[a-z A-Z]*" name="firstName" id="firstName" required />
+                  <span id="errorFirstName" class="errors-text"></span>
+                  
+                  <label for="lastName">Nazwisko: *</label> 
+                  <input type="text" pattern="[a-z A-Z]*" name="lastName" id="lastName" required />
+                  <span id="errorlastName" class="errors-text"></span>
+
+                  <label for="Wiek">Wiek: *</label>
+                  <input type="number" min="18" max="95" name="Wiek" id="Wiek" required />
+                  <span id="errorWiek" class="errors-text"></span>
+                  
+                  <label for="Email">Email: </label>
+                  <input type="email" name="Email" id="Email"  />
+                  <span id="errorEmail" class="errors-text"></span>
+
+                  <label for="NrTelefonu">NrTelefonu: *</label>
+                  <input type="tel" pattern="[0-9]{9}" name="NrTelefonu" id="NrTelefonu" required />
+                  <span id="errorNrTelefonu" class="errors-text"></span>
+
+                  <div>
+                    <button formaction="../../successAdding.html" class="button-add" >Dodaj </button>
+                    <a href="../employee/list.html" class="list-actions-button-delete">Anuluj</a>
+                  </div>
+                  
+                  
+
+
+              </form> 
+
+        
+    </main>
+
+
+    <footer>
+        PsychMed poradnia pscyhologiczna
+    </footer>
+    
+</body>
+
+
+</html>

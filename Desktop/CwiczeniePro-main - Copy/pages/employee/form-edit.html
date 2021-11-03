@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang ="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>PsychMed Demo</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+</head>  
+
+<body>
+    <header>
+        <h1>PsychMed</h1>
+        <img src="../../images/logo.png" alt="PsychMed Logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Strona główna</a></li>
+            <li><a href="list.html">Lekarze</a></li>
+            <li><a href="../specjalizacje/listaSpecjalizacji.html">Specjalizacja</a></li>
+            <li><a href="../zatrudnienie/listaZatrudnionych.html">Zatrudnienie</a></li>
+        </ul>
+
+        
+        
+    </nav>
+
+    <main>
+        <h2>Edycja lekarza</h2>
+        
+            
+            
+              <form >
+                  <label for="Imię" class="form">Imię: <span class="symbol-required">*</span></label>
+                  <input type="text" pattern="[a-z A-Z]*" name="Imię" id="Imię" value="Jan" required />
+                  <span id="errorImię" class="errors-text"></span>
+                  
+                  <label for="Nazwisko" class="form">Nazwisko: *</label>
+                  <input type="text" pattern="[a-z A-Z]*" name="Nazwisko" id="Nazwisko" value="Janowski" required />
+                  <span id="errorNazwisko" class="errors-text"></span>
+
+                  <label for="Wiek" class="form">Wiek: *</label>
+                  <input type="number" min="18" max="95" name="Wiek" id="Wiek" value="45" required />
+                  <span id="errorWiek" class="errors-text"></span>
+                  
+                  <label for="Email" class="form">Email:</label>
+                  <input type="email" name="Email" id="Email" value="Jan@gmail.com"  />
+                  <span id="errorEmail" class="errors-text"></span>
+
+                  <label for="NrTelefonu" class="form">NrTelefonu: *</label>
+                  <input type="tel" pattern="[0-9]{9}" name="NrTelefonu" id="NrTelefonu" value="506136775" required />
+                  <span id="errorNrTelefonu" class="errors-text"></span>
+
+                  <div>
+                    <button formaction="../../SuccessEditing.html" class="list-actions-button-edit">Edytuj</button>
+                    <a href="../employee/list.html" class="list-actions-button-delete">Anuluj</a>
+                  </div>
+                  
+              </form> 
+            
+        
+        
+        
+        
+    </main>
+
+    <footer>
+        PsychMed poradnia pscyhologiczna
+    </footer>
+
+</body>
+
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang ="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>PsychMed DEMO</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+</head>  
+
+<body>
+    <header>
+        <h1>PsychMed</h1>
+        <img src="../../images/logo.png" alt="PsychMed Logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Strona główna</a></li>
+            <li><a href="../employee/list.html">Lekarze</a></li>
+            <li><a href="../specjalizacje/listaSpecjalizacji.html">Specjalizacje</a></li>
+            <li><a href="../zatrudnienie/listaZatrudnionych.html">Zatrudnienie</a></li>
+        </ul>
+
+       
+        
+    </nav>
+
+    <main>
+        <h2>Szczegóły lekarza</h2>
+
+        <form>
+            <label for="idLekarza">idLekarza: *</label>
+            <input type="number"  name="idLekarza" id="idLekarza" value="1" disabled />
+            <span id="erroridLekarza" class="errors-text"></span>
+
+              <label for="firstName">Imię: *</label>
+              <input type="text" name="firstName" id="firstName" value="Jan" disabled />
+              <span id="errorFirstName" class="errors-text"></span>
+              
+              <label for="lastName">Nazwisko: *</label>
+              <input type="text" name="lastName" id="lastName" value="Janowski" disabled />
+              <span id="errorlastName" class="errors-text"></span>
+
+              <label for="Wiek">Wiek: *</label>
+              <input type="number" name="Wiek" id="Wiek" value="45" disabled />
+              <span id="errorWiek" class="errors-text"></span>
+              
+              <label for="Email">Email:</label>
+              <input type="email" name="Email" id="Email" value="Jan@gmail.com" disabled />
+              <span id="errorEmail" class="errors-text"></span>
+
+              <label for="NrTelefonu">NrTelefonu: *</label>
+              <input type="number" name="NrTelefonu" id="NrTelefonu" value="506136775" disabled />
+              <span id="errorNrTelefonu" class="errors-text"></span>
+
+              <div>
+            
+                <a href="../employee/form-edit.html">Edytuj</a>
+              </div>
+              
+          </form> 
+
+
+        <table class="table-list">
+            <thead>
+                <tr>
+                    <th>Specjalizacja</th>
+                    <th>BazowaPensja</th>
+                    <th>Opinia</th>
+                    <th>Zarobek</th>
+                    <th>Praca od</th>
+                    <th>Praca do</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> PsychologDziecięcy </td>
+                    <td> 3500zł </td>
+                    <td> Very good pracownik </td>
+                    <td>4500zł</td>
+                    <td>15.11.2012</td>
+                    <td>dziś</td>              
+                </tr>
+
+              
+            </tbody>
+        </table>
+        
+        
+        
+    </main>
+
+    <footer>
+        PsychMed poradnia pscyhologiczna
+    </footer>
+
+</body>
+
+
+</html>
